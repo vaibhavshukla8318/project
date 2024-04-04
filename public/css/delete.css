@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.delete-accout-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.delete-account{
+height: auto;
+width: 30vw;
+padding:15px;
+position: relative;
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: #fff;
+border-radius: 10px;
+}
+.delete-account .horizontal-line{
+ border: 1px solid #ccc;
+ border-top: none;
+ width: 100%;
+ position: absolute;
+ transform: translatex(-4%); 
+ top: 30%;
+}
+ .delete-account form button{
+    width: 100%;
+    max-width: 150px;
+    height: 35px;
+    border-radius:20px;
+    border: none;
+    background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% );
+   cursor: pointer;
+ }
+ .delete-account form button:hover{
+   background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+ }
+
+ @media(max-width: 600px){
+    .delete-account{
+        height: 100%;
+        width:100vw;
+        background-color: grey;
+    }
+    .delete-account h2{
+        padding-bottom: 10px;
+        padding-left: 20px;
+        width: 100vw;
+        transform: translatex(-4%); 
+    }
+    .horizontal-line{
+       display: none;
+    }
+ }

@@ -1,0 +1,31 @@
+<!-- delete-account.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Delete Account</title>
+    <link rel="stylesheet" href="css/delete.css">
+</head>
+
+<body>
+    <div class="delete-accout-container">
+        <div class="delete-account">
+            <h2>Delete Account</h2>
+            <hr class="horizontal-line">
+            <p>Deleting your account will remove all of your information from our database. This cannot be undone</p>
+            <!-- Add a form for confirmation -->
+            <form action="/delete-account" method="POST">
+                <button type="submit">Confirm Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add any additional content or styling as needed -->
+</body>
+
+</html>

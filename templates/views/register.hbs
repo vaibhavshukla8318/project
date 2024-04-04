@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  {{>header}}
+</head>
+<body>
+  {{>navbar}}
+
+    <div class="formContainer register-container">
+        <div class="logo-container">
+          <span class="logo"><img src="images/login.png" alt="login" /></span>
+          <span class="title">Register</span>
+          <p class="top-para">
+            Already have an account? <a href="/login">Login</a>
+          </p>
+        </div>
+        <div class="formWrapper">
+           <span class="logo"><img src="images/login.png" alt="login" /></span>
+           <span class="title">Register</span>
+          <form action="/register" method="POST">
+            <div class="input-container">
+              <input type="text" name="firstName" id="firstName" placeholder="First Name" /> 
+              <input type="text" name="lastName" id="lastName" placeholder="Last Name" /> 
+              <input type="number" name="number" id="number" placeholder="Number" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input type="password" name="password" id="password" placeholder="Password" />
+              <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" />
+            </div>  
+            <button>Sign up</button>
+          </form>
+           <p class="bottom-para">
+            Already have an account? <a href="/login">Login</a>
+          </p>
+        </div>
+    </div>
+   <script src="js/script.js"></script>
+</body>
+</html>

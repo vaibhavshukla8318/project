@@ -1,0 +1,28 @@
+<!-- views/login.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+
+     <div class="formContainer login-container">
+        <div class="formWrapper">
+          <span class="logo"><img src="images/login.png" alt="login" /></span>
+          <span class="title">Login</span>
+          <form action="/login" method="POST">
+            <input type="email" name="email" id="email" placeholder="Your Email" />
+            <input type="password" name="password" id="password" placeholder="Your Password" />
+            <button>Sign in</button>
+          </form>
+          <p>
+            You don't have an account? <a href="/register">Register</a>
+          </p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
