@@ -15,7 +15,7 @@ const { json } = require("express");
 
 const port = process.env.PORT || 3000;
 
-const static_path =  path.join(__dirname, "../public");
+const static_path =  path.join(__dirname, "../dist");
 const template_path =  path.join(__dirname, "../templates/views");
 const partial_path =  path.join(__dirname, "../templates/partials");
 
